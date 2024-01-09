@@ -1,0 +1,170 @@
+.button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+   
+    z-index: 99;
+    color: #ffffff42;
+    font-size: 4rem;
+}
+.carousel-img
+{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -99;
+   }
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+    color: #ffff;
+    cursor: pointer;
+
+}
+.fa-arrow-left {
+    position: absolute;
+    left: 0;
+}
+.fa-arrow-right {
+    position: absolute;
+    right: 0;
+}
+.fa-solid
+{
+    color: #FF6060;
+}
+.logement-title,
+.logement-location
+{
+    color: #FF6060;
+}
+button{
+    background-color: #FF6060;
+    color: white;
+    border: none;
+    width: 30vw;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.button{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    
+    
+
+}
+
+.logement-infos-host
+{
+    display: flex;
+    justify-content: space-between;
+}
+.logement-host-picture
+{
+    height: 10vh;
+    width: 10vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.logement-tag
+{
+    background-color: #FF6060;
+    
+    
+}
+.tags {
+    display: flex;
+    gap: 20px;
+
+    span {
+        background-color: #FF6060;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 30px;
+    }
+}
+.button-desc span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 30px;
+    
+}
+.button-equipments span{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 30px;
+    text-align: center;
+}
+/* Ajoutez position: relative; au conteneur des spans */
+.button-desc, .button-equipments {
+    position: relative;
+}
+
+/* Modifiez la position et la taille des spans pour les aligner correctement */
+.button-desc span {
+    position: absolute;
+    top: 100%; /* Positionnez en dessous du bouton */
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 10; /* Assurez-vous qu'ils apparaissent au-dessus des autres éléments */
+}
+.button-equipments span
+{
+   display: flex;
+   flex-direction: column;
+    top: 100%; /* Positionnez en dessous du bouton */
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 10; /* Assurez-vous qu'ils apparaissent au-dessus des autres éléments */
+   
+}
+/* Assurez-vous que la classe active rend les spans visibles */
+.button-desc span.active, .button-equipments span.active {
+    visibility: visible;
+    opacity: 1;
+}
+.fleche
+{
+    color: #ffff;
+}
